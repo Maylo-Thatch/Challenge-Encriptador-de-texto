@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="assets/Logo.png" alt="Logo Alura">
+        <span class="titulo">Encriptador de texto</span>
+    </header>
+    <main>
+        
+        <section class="container">
+            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <p class="informacion">
+                    <img class="aviso-logo" src="assets/Aviso.png" alt="Imagen Aviso"> 
+                     Solo letras minúsculas y sin acentos
+                </p>    
+            </div>
+
+            <div class="botones">
+              <button class="btn-encriptar" onclick="btnEncriptar()" >Encriptar</button>
+              <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+              
+            </div>
+        </section>
+
+        <section class="contenedor-mensaje">
+
+            <textarea class="mensaje"  cols="20" rows="10"></textarea>
+            <div class="texto-info">
+            <h3 class="texto-msj-uno" >Ningún mensaje fue <br> encontrado</h3>
+            <p class="texto-msj-dos">Ingresa el texto que desees encriptar o <br> desencriptar.</p>
+            </div>
+            <button class="btn-copiar" onclick="copiarTexto()" >Copiar</button>
+            
+            
+            
+        </section>
+        
+
+    </main>
+    <script src="script.js"></script>
+
+    <footer>
+        <p class="autor">Desarrollado por Milton Pineda para alura LATAM</p>
+    </footer>
+
+    
+    
+</body>
+</html>
