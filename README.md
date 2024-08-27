@@ -12,4 +12,4 @@
 
 ## Hecho por:
 
-###Pineda López Milton Geovany
+Pineda López Milton Geovany
